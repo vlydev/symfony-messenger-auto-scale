@@ -13,7 +13,7 @@
         "ext-pcntl": "*",
         "krak/schema": "^0.2.0",
         "psr/event-dispatcher": "^1.0",
-        "symfony/messenger": "^4.4|^5.4|^6.2|~7.0"
+        "symfony/messenger": "^4.4|^5.4|^6.2|~7.0|~8.0"
     },
     "autoload": {
         "psr-4": {
