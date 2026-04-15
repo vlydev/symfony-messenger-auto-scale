@@ -7,7 +7,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 final class RestartCommand extends PoolCommand
 {
-    protected function configure() {
+    protected function configure(): void {
         $this->setName('krak:auto-scale:pool:restart')
             ->setDescription('Request a restart for the selected pools')
             ->addPoolArgument('The names of the pools to perform a restart');

@@ -16,7 +16,7 @@ final class ConsumeCommand extends Command
         $this->supervisor = $supervisor;
     }
 
-    protected function configure() {
+    protected function configure(): void {
         $this->setName('krak:auto-scale:consume')
             ->setDescription('Start the supervisor to manage the worker consumers.');
     }

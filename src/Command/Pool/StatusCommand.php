@@ -11,7 +11,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 final class StatusCommand extends PoolCommand
 {
-    protected function configure() {
+    protected function configure(): void {
         $this->setName('krak:auto-scale:pool:status')
             ->setDescription('Show the status of the selected pool (or all if no pool name is given).')
             ->addPoolArgument('The names of the pools to display the status')
