@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 final class BuildSupervisorPoolConfigCompilerPass implements CompilerPassInterface
 {
-    public function process(ContainerBuilder $container) {
+    public function process(ContainerBuilder $container): void {
         $receiverNames = $this->findReceiverNamesSortedByPriorityAndPosition($container);
         $this->registerMappedPoolConfigData($container, $receiverNames);
         $container->setParameter('messenger_auto_scale.receiver_names', $receiverNames);
