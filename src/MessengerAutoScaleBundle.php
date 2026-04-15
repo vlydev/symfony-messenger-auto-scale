@@ -48,7 +48,7 @@ class MessengerAutoScaleBundle extends Bundle
                     ->addArgument($processedConfig['console_path']);
             }
 
-            public function getConfiguration(array $config, ContainerBuilder $container) {
+            public function getConfiguration(array $config, ContainerBuilder $container): ?ConfigurationInterface {
                 return new class() implements ConfigurationInterface {
                     public function getConfigTreeBuilder(): TreeBuilder {
                         return configTree('messenger_auto_scale', struct([
