@@ -25,7 +25,7 @@ class MessengerAutoScaleBundle extends Bundle
 {
     const TAG_RAISE_ALERTS = 'messenger_auto_scale.raise_alerts';
 
-    public function build(ContainerBuilder $container) {
+    public function build(ContainerBuilder $container): void {
         $container->addCompilerPass(new DependencyInjection\BuildSupervisorPoolConfigCompilerPass());
         $container->registerForAutoconfiguration(RaiseAlerts::class)->addTag(self::TAG_RAISE_ALERTS);
     }

@@ -3,3 +3,5 @@
 /var/
 /tests/Feature/Fixtures/_message-info.txt
 .phpunit.result.cache
+.idea/
+.DS_Store
